@@ -1,23 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="71a6d954-dc4e-4cf1-90b2-4ea47ce3b47e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Test/Sprint2/BestGymEverTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sprint2/BestGymEver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OOP-inlm-uppg.iml" beforeDir="false" afterPath="$PROJECT_DIR$/OOP-inlm-uppg.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/Sprint1/GreenestPlantHotel/CactusTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Sprint1/CactusTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/Sprint1/GreenestPlantHotel/CarnivorousPlantTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Sprint1/CarnivorousPlantTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/Sprint1/GreenestPlantHotel/PalmTreeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Sprint1/PalmTreeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sprint1/GreenestPlantHotel/Cactus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sprint1/Cactus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sprint1/GreenestPlantHotel/CarnivorousPlant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sprint1/CarnivorousPlant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sprint1/GreenestPlantHotel/Greenest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sprint1/Greenest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sprint1/GreenestPlantHotel/HeightInMeters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sprint1/HeightInMeters.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sprint1/GreenestPlantHotel/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sprint1/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sprint1/GreenestPlantHotel/NutritionalType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sprint1/NutritionalType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sprint1/GreenestPlantHotel/PalmTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sprint1/PalmTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sprint1/GreenestPlantHotel/Plant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sprint1/Plant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sprint1/GreenestPlantHotel/PrintMe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sprint1/PrintMe.java" afterDir="false" />
+    <list default="true" id="71a6d954-dc4e-4cf1-90b2-4ea47ce3b47e" name="Changes" comment="update, adderat för sprint 2">
+      <change afterPath="$PROJECT_DIR$/src/Sprint2/customers.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,8 +52,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665666757410</updated>
-      <workItem from="1665666759221" duration="522000" />
+      <workItem from="1665666759221" duration="644000" />
     </task>
+    <task id="LOCAL−00001" summary="update, adderat för sprint 2">
+      <created>1665667314718</created>
+      <option name="number" value="LOCAL−00001" />
+      <option name="presentableId" value="LOCAL−00001" />
+      <updated>1665667314718</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -84,5 +76,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update, adderat för sprint 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="update, adderat för sprint 2" />
   </component>
 </project>
