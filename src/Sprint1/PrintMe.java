@@ -1,4 +1,4 @@
-package Sprint1_OOP.GreenestPlantHotel;
+package Sprint1;
 
 public interface PrintMe {
     public void printMe();

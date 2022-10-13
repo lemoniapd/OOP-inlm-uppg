@@ -1,4 +1,4 @@
-package Sprint1_OOP.GreenestPlantHotel;
+package Sprint1;
 
 public abstract class Plant implements PrintMe { //interface
     private String name;
