@@ -26,4 +26,10 @@ public class Member extends Person {
     public void setMembershipStatus(MembershipStatus membershipStatus) {
         this.membershipStatus = membershipStatus;
     }
+
+    @Override
+    public String toString() {
+        return "Medlem " + getName() + " har medlemsstatus "
+                + getMembershipStatus().membershipStatus;
+    }
 }
