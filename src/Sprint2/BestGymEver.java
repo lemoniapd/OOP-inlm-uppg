@@ -2,11 +2,9 @@ package Sprint2;
 
 import javax.swing.*;
 import java.io.*;
-import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.time.LocalDate;
+import java.util.*;
 
 public class BestGymEver {
 
@@ -40,11 +38,42 @@ public class BestGymEver {
         return memberList;
     }
 
-    public BestGymEver() {
+    public boolean isMember (String input){
+        if (memberList.contains(input)){
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public boolean isActiveMember (String input){
+        LocalDate lastPaymentDate = LocalDate.parse(memberList.get(memberList.indexOf(input)).getDateOfLastPayment());
+        if (lastPaymentDate.compareTo(LocalDate.now()) <= 365){
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public void workoutForMember (Member member){
+        int workout = JOptionPane.showConfirmDialog(null, "Ska medlemmen även träna?");
+        if (workout == 1){
+            try (PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter(outFilePathName)))){
+                out.println("Medlem " + member.getName() + " " + member.getIDnr() + " tränade " + LocalDate.now());
+            } catch (Exception e){
+                JOptionPane.showMessageDialog(null, "Någonting gick fel!");
+                e.printStackTrace();
+                System.exit(0);
+            }
+        } else {
+            System.exit(0);
+        }
+    }
+
+    public BestGymEver(boolean b) {
         getListFromFile(Path.of(filePath));
         for (Member e: memberList) {
             System.out.println(e.toString());
         }
-
     }
 }

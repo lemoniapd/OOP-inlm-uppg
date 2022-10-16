@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="71a6d954-dc4e-4cf1-90b2-4ea47ce3b47e" name="Changes" comment="update, started code as well">
+    <list default="true" id="71a6d954-dc4e-4cf1-90b2-4ea47ce3b47e" name="Changes" comment="minor progress">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Sprint2/BestGymEverTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Sprint2/BestGymEverTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Sprint2/customersTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Sprint2/customersTest.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Sprint2/BestGymEver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sprint2/BestGymEver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Sprint2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sprint2/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Sprint2/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sprint2/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sprint2/MembershipStatus.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +47,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "last_opened_file_path": "/Users/lemoniapalmqvist/IdeaProjects/OOP-inlm-uppg/Test/Sprint1"
   }
 }]]></component>
@@ -55,11 +60,17 @@
       <recent name="$PROJECT_DIR$/Test/Sprint1" />
       <recent name="$PROJECT_DIR$/src/Sprint1/GreenestPlantHotel" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="Sprint2" />
     </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="Sprint2" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.BestGymEverTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Sprint2.Main" />
       <module name="OOP-inlm-uppg" />
@@ -73,9 +84,42 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BestGymEverTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="OOP-inlm-uppg" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Sprint2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Sprint2" />
+      <option name="MAIN_CLASS_NAME" value="Sprint2.BestGymEverTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BestGymEverTest.isMemberTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="OOP-inlm-uppg" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Sprint2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Sprint2" />
+      <option name="MAIN_CLASS_NAME" value="Sprint2.BestGymEverTest" />
+      <option name="METHOD_NAME" value="isMemberTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BestGymEverTest" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.BestGymEverTest.isMemberTest" />
       </list>
     </recent_temporary>
   </component>
@@ -88,7 +132,7 @@
       <option name="presentableId" value="Default" />
       <updated>1665666757410</updated>
       <workItem from="1665666759221" duration="684000" />
-      <workItem from="1665906324328" duration="10660000" />
+      <workItem from="1665906324328" duration="18011000" />
     </task>
     <task id="LOCAL−00001" summary="update, adderat för sprint 2">
       <created>1665667314718</created>
@@ -108,7 +152,13 @@
       <option name="presentableId" value="LOCAL−00003" />
       <updated>1665914034580</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL−00004" summary="minor progress">
+      <created>1665917949548</created>
+      <option name="number" value="LOCAL−00004" />
+      <option name="presentableId" value="LOCAL−00004" />
+      <updated>1665917949548</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,15 +179,16 @@
     <MESSAGE value="update, adderat för sprint 2" />
     <MESSAGE value="update, adderat customers" />
     <MESSAGE value="update, started code as well" />
-    <option name="LAST_COMMIT_MESSAGE" value="update, started code as well" />
+    <MESSAGE value="minor progress" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor progress" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Sprint2/BestGymEver.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="4" />
+          <line>21</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
