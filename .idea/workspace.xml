@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="71a6d954-dc4e-4cf1-90b2-4ea47ce3b47e" name="Changes" comment="minor progress">
+    <list default="true" id="71a6d954-dc4e-4cf1-90b2-4ea47ce3b47e" name="Changes" comment="minor progresses">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/Sprint2/BestGymEverTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Sprint2/BestGymEverTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/Sprint2/customersTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Sprint2/customersTest.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Sprint2/BestGymEver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sprint2/BestGymEver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sprint2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sprint2/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Sprint2/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sprint2/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sprint2/MembershipStatus.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +66,7 @@
       <recent name="Sprint2" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BestGymEverTest">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Sprint2.Main" />
       <module name="OOP-inlm-uppg" />
@@ -117,8 +113,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BestGymEverTest" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.BestGymEverTest" />
         <item itemvalue="JUnit.BestGymEverTest.isMemberTest" />
       </list>
     </recent_temporary>
@@ -132,7 +128,7 @@
       <option name="presentableId" value="Default" />
       <updated>1665666757410</updated>
       <workItem from="1665666759221" duration="684000" />
-      <workItem from="1665906324328" duration="18011000" />
+      <workItem from="1665906324328" duration="26720000" />
     </task>
     <task id="LOCAL−00001" summary="update, adderat för sprint 2">
       <created>1665667314718</created>
@@ -158,7 +154,13 @@
       <option name="presentableId" value="LOCAL−00004" />
       <updated>1665917949548</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL−00005" summary="minor progresses">
+      <created>1665945215977</created>
+      <option name="number" value="LOCAL−00005" />
+      <option name="presentableId" value="LOCAL−00005" />
+      <updated>1665945215977</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,18 +182,10 @@
     <MESSAGE value="update, adderat customers" />
     <MESSAGE value="update, started code as well" />
     <MESSAGE value="minor progress" />
-    <option name="LAST_COMMIT_MESSAGE" value="minor progress" />
+    <MESSAGE value="minor progresses" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor progresses" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Sprint2/BestGymEver.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="line" />

@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.io.*;
 import java.nio.file.Path;
 import java.time.LocalDate;
+import java.time.Period;
 import java.util.*;
 
 public class BestGymEver {
@@ -14,16 +15,26 @@ public class BestGymEver {
     public boolean test = false;
     private List<Member> memberList = new ArrayList<>();
 
+    public BestGymEver(boolean b) {
+        getListFromFile(Path.of(filePath));
+
+        String input = JOptionPane.showInputDialog(null, "Skriv in namn: ");
+        isMember(input);
+
+        /*for (Member e: memberList) {
+            System.out.println(e.toString());
+        }
+         */
+    }
+
     public List<Member> getListFromFile(Path p) {
-        try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
             String line;
+        try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
             int memberCounter = 0;
             while ((line = br.readLine()) != null) {
-                line = br.readLine();
                 memberList.add(new Member(line.substring(0, line.indexOf(',')),
-                        line.substring(line.indexOf(',') + 1)));
-                line = br.readLine().trim();
-                memberList.get(memberCounter).setDateOfLastPayment(br.readLine());
+                        line.substring(line.indexOf(',') + 2)));
+                memberList.get(memberCounter).setDateOfLastPayment(br.readLine().trim());
                 memberCounter++;
             }
         } catch (FileNotFoundException e) {
@@ -48,7 +59,8 @@ public class BestGymEver {
 
     public boolean isActiveMember (String input){
         LocalDate lastPaymentDate = LocalDate.parse(memberList.get(memberList.indexOf(input)).getDateOfLastPayment());
-        if (lastPaymentDate.compareTo(LocalDate.now()) <= 365){
+        Period sinceLastPayment = Period.ofYears(Period.between(LocalDate.now(), lastPaymentDate).getDays());
+        if (sinceLastPayment.getDays() <= 365){
             return true;
         } else {
             return false;
@@ -70,10 +82,4 @@ public class BestGymEver {
         }
     }
 
-    public BestGymEver(boolean b) {
-        getListFromFile(Path.of(filePath));
-        for (Member e: memberList) {
-            System.out.println(e.toString());
-        }
-    }
 }
