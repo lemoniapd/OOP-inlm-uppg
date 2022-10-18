@@ -4,10 +4,10 @@ import java.time.LocalDate;
 
 public class Member extends Person {
     private LocalDate dateOfLastPayment;
+    private String membershipStatus;
 
-    public Member(String name, String IDnr/*LocalDate dateOfLastPayment*/) {
+    public Member(String name, String IDnr) {
         super(name, IDnr);
-        //this.dateOfLastPayment = dateOfLastPayment;
     }
 
     public String getDateOfLastPayment() {
@@ -17,9 +17,11 @@ public class Member extends Person {
     public void setDateOfLastPayment(String dateOfLastPayment) {
         this.dateOfLastPayment = LocalDate.parse(dateOfLastPayment);
     }
+    public void setMembershipStatus(String membershipStatus) {
+        this.membershipStatus = membershipStatus;
+    }
 
-    @Override
-    public String toString() {
-        return "Medlem " + getName() + " har medlemsstatus.";
+    public String stringResult() {
+        return getName() + " har medlemsstatus: " + this.membershipStatus;
     }
 }

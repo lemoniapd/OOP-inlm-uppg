@@ -7,6 +7,8 @@ import java.time.LocalDate;
 import java.time.Period;
 import java.util.*;
 
+import static Sprint2.MembershipStatus.*;
+
 public class BestGymEver {
 
     String filePath = "src/Sprint2/customers.txt";
@@ -17,18 +19,23 @@ public class BestGymEver {
 
     public BestGymEver(boolean b) {
         getListFromFile(Path.of(filePath));
-
-        String input = JOptionPane.showInputDialog(null, "Skriv in namn: ");
-        isMember(input);
-
-        /*for (Member e: memberList) {
-            System.out.println(e.toString());
+        while (true) {
+            String input = JOptionPane.showInputDialog(null, "Skriv in namn: ");
+            try {
+                Member member = isMember(input);
+                if (isActiveMember(member)) {
+                    JOptionPane.showMessageDialog(null, "Aktiv");
+                } else if (member != null) {
+                    JOptionPane.showMessageDialog(null, "Inaktiv");
+                }
+            } catch (NullPointerException e) {
+                JOptionPane.showMessageDialog(null, input + " är inte medlem!");
+            }
         }
-         */
     }
 
     public List<Member> getListFromFile(Path p) {
-            String line;
+        String line;
         try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
             int memberCounter = 0;
             while ((line = br.readLine()) != null) {
@@ -49,30 +56,34 @@ public class BestGymEver {
         return memberList;
     }
 
-    public boolean isMember (String input){
-        if (memberList.contains(input)){
+    public Member isMember(String input) {
+        for (Member element : memberList) {
+            if (element.getName().equalsIgnoreCase(input)) {
+                return element;
+            }
+        }
+        return null; //TILLFÄLLIG LÖSNING
+    }
+
+    public boolean isActiveMember(Member member) {
+        LocalDate lastPaymentDate = LocalDate.parse(member.getDateOfLastPayment());
+        Period sinceLastPayment = Period.between(LocalDate.now(), lastPaymentDate);
+        int passedYears = Math.abs(sinceLastPayment.getYears());
+        if (passedYears <= 1) {
+            member.setMembershipStatus(ACTIVE_MEMBER.membershipStatus);
             return true;
         } else {
+            member.setMembershipStatus(INACTIVE_MEMBER.membershipStatus);
             return false;
         }
     }
 
-    public boolean isActiveMember (String input){
-        LocalDate lastPaymentDate = LocalDate.parse(memberList.get(memberList.indexOf(input)).getDateOfLastPayment());
-        Period sinceLastPayment = Period.ofYears(Period.between(LocalDate.now(), lastPaymentDate).getDays());
-        if (sinceLastPayment.getDays() <= 365){
-            return true;
-        } else {
-            return false;
-        }
-    }
-
-    public void workoutForMember (Member member){
+    public void workoutForMember(Member member) {
         int workout = JOptionPane.showConfirmDialog(null, "Ska medlemmen även träna?");
-        if (workout == 1){
-            try (PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter(outFilePathName)))){
+        if (workout == 1) {
+            try (PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter(outFilePathName)))) {
                 out.println("Medlem " + member.getName() + " " + member.getIDnr() + " tränade " + LocalDate.now());
-            } catch (Exception e){
+            } catch (Exception e) {
                 JOptionPane.showMessageDialog(null, "Någonting gick fel!");
                 e.printStackTrace();
                 System.exit(0);
@@ -81,5 +92,4 @@ public class BestGymEver {
             System.exit(0);
         }
     }
-
 }
