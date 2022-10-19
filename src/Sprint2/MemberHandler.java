@@ -12,7 +12,7 @@ import static Sprint2.MembershipStatus.INACTIVE_MEMBER;
 
 public class MemberHandler {
 
-    private String outFilePathName = "src/Sprint2/PTinfo.txt";
+    private final String OUT_FILE_PATH = "src/Sprint2/PTinfo.txt";
 
     public Member isMember(String input, List<Member> memberList) {
         Member member = new Member("", "");
@@ -41,7 +41,7 @@ public class MemberHandler {
     public void workoutForMember(Member member) {
         int workout = JOptionPane.showConfirmDialog(null, "Ska medlemmen även träna?");
         if (workout == 0) {
-            try (PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter(outFilePathName, true)))) {
+            try (PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter(OUT_FILE_PATH, true)))) {
                 out.println("Medlem " + member.getName() + " " + member.getIDnr() + " tränade " + LocalDate.now());
                 JOptionPane.showMessageDialog(null, "Träningspass registrerat!");
             } catch (Exception e) {

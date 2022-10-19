@@ -3,14 +3,12 @@ package Sprint2;
 import javax.swing.*;
 import java.io.*;
 import java.nio.file.Path;
-import java.time.LocalDate;
 import java.util.*;
 
-import static Sprint2.MembershipStatus.*;
 
 public class BestGymEver {
 
-    private String filePath = "src/Sprint2/customers.txt";
+    private final String FILE_PATH = "src/Sprint2/customers.txt";
 
     public boolean test = false;
 
@@ -19,7 +17,7 @@ public class BestGymEver {
     private MemberHandler memberHandler = new MemberHandler();
 
     public BestGymEver(boolean test, String testData) {
-        getListFromFile(Path.of(filePath));
+        getListFromFile(Path.of(FILE_PATH));
         String input;
         if (!test) {
             while (true) {
@@ -45,7 +43,7 @@ public class BestGymEver {
 
     public List<Member> getListFromFile(Path p) {
         String line;
-        try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
+        try (BufferedReader br = new BufferedReader(new FileReader(String.valueOf(p)))) {
             int memberCounter = 0;
             while ((line = br.readLine()) != null) {
                 memberList.add(new Member(line.substring(0, line.indexOf(',')),
