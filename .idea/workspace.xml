@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="71a6d954-dc4e-4cf1-90b2-4ea47ce3b47e" name="Changes" comment="added class member handler for methods regarding members rather than keeping them in Best gym ever">
+    <list default="true" id="71a6d954-dc4e-4cf1-90b2-4ea47ce3b47e" name="Changes" comment="removed 1 usage of variable file path and made file path and out file path final">
+      <change afterPath="$PROJECT_DIR$/Test/Sprint2/MemberHandlerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Sprint2/BestGymEverTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Sprint2/BestGymEverTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Sprint2/customersTest.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Sprint2/BestGymEver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sprint2/BestGymEver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sprint2/MemberHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sprint2/MemberHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sprint2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sprint2/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +18,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -70,7 +73,7 @@
       <recent name="Sprint2" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.BestGymEverTest.getListFromFileTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Sprint2.Main" />
       <module name="OOP-inlm-uppg" />
@@ -84,7 +87,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BestGymEverTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BestGymEverTest.getListFromFileTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OOP-inlm-uppg" />
       <extension name="coverage">
         <pattern>
@@ -94,12 +97,28 @@
       </extension>
       <option name="PACKAGE_NAME" value="Sprint2" />
       <option name="MAIN_CLASS_NAME" value="Sprint2.BestGymEverTest" />
+      <option name="METHOD_NAME" value="getListFromFileTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MemberHandlerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="OOP-inlm-uppg" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Sprint2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Sprint2" />
+      <option name="MAIN_CLASS_NAME" value="Sprint2.MemberHandlerTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BestGymEverTest.isMemberTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MemberHandlerTest.memberDoesNotExistTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OOP-inlm-uppg" />
       <extension name="coverage">
         <pattern>
@@ -108,8 +127,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Sprint2" />
-      <option name="MAIN_CLASS_NAME" value="Sprint2.BestGymEverTest" />
-      <option name="METHOD_NAME" value="isMemberTest" />
+      <option name="MAIN_CLASS_NAME" value="Sprint2.MemberHandlerTest" />
+      <option name="METHOD_NAME" value="memberDoesNotExistTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MemberHandlerTest.memberExistsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="OOP-inlm-uppg" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Sprint2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Sprint2" />
+      <option name="MAIN_CLASS_NAME" value="Sprint2.MemberHandlerTest" />
+      <option name="METHOD_NAME" value="memberExistsTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -117,9 +152,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BestGymEverTest.getListFromFileTest" />
+        <item itemvalue="JUnit.MemberHandlerTest.memberDoesNotExistTest" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.BestGymEverTest" />
-        <item itemvalue="JUnit.BestGymEverTest.isMemberTest" />
+        <item itemvalue="JUnit.MemberHandlerTest" />
+        <item itemvalue="JUnit.MemberHandlerTest.memberExistsTest" />
       </list>
     </recent_temporary>
   </component>
@@ -141,7 +178,7 @@
       <workItem from="1666102556911" duration="3000" />
       <workItem from="1666116528431" duration="2853000" />
       <workItem from="1666162680435" duration="253000" />
-      <workItem from="1666198942467" duration="4357000" />
+      <workItem from="1666198942467" duration="6095000" />
     </task>
     <task id="LOCAL−00001" summary="update, adderat för sprint 2">
       <created>1665667314718</created>
@@ -209,7 +246,13 @@
       <option name="presentableId" value="LOCAL−00011" />
       <updated>1666203057529</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL−00012" summary="removed 1 usage of variable file path and made file path and out file path final">
+      <created>1666203411277</created>
+      <option name="number" value="LOCAL−00012" />
+      <option name="presentableId" value="LOCAL−00012" />
+      <updated>1666203411277</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,7 +281,8 @@
     <MESSAGE value="progress for methods and resolved bug for last payment date and set it to clone of member" />
     <MESSAGE value="progress for methods and fixed null pointer exception while closing dialog and dynamic printing of status" />
     <MESSAGE value="added class member handler for methods regarding members rather than keeping them in Best gym ever" />
-    <option name="LAST_COMMIT_MESSAGE" value="added class member handler for methods regarding members rather than keeping them in Best gym ever" />
+    <MESSAGE value="removed 1 usage of variable file path and made file path and out file path final" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed 1 usage of variable file path and made file path and out file path final" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

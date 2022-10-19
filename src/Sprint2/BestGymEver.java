@@ -8,7 +8,7 @@ import java.util.*;
 
 public class BestGymEver {
 
-    private final String FILE_PATH = "src/Sprint2/customers.txt";
+    public final String FILE_PATH = "src/Sprint2/customers.txt";
 
     public boolean test = false;
 
