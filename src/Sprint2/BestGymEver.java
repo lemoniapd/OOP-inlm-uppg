@@ -29,13 +29,12 @@ public class BestGymEver {
                     if (member.getName().equals("")) {
                         JOptionPane.showMessageDialog(null, "Ingen medlem med det namnet/personnumret hittad.");
                     } else if (isInactiveMember(member)) {
-                        JOptionPane.showMessageDialog(null, "Inaktiv");
+                        JOptionPane.showMessageDialog(null, member.printMembershipStatus());
                     } else {
-                        JOptionPane.showMessageDialog(null, "Aktiv");
+                        JOptionPane.showMessageDialog(null, member.printMembershipStatus());
                         workoutForMember(member);
                     }
                 } catch (NullPointerException e) {
-                    e.printStackTrace();
                     System.exit(0);
                 }
             }
@@ -102,8 +101,6 @@ public class BestGymEver {
                 e.printStackTrace();
                 System.exit(0);
             }
-        } else {
-            System.exit(0);
         }
     }
 }

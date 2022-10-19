@@ -1,8 +1,8 @@
 package Sprint2;
 
 public enum MembershipStatus {
-    ACTIVE_MEMBER (" aktiv medlem. "),
-    INACTIVE_MEMBER (" före detta medlem. ");
+    ACTIVE_MEMBER ("Aktiv medlem. "),
+    INACTIVE_MEMBER ("Före detta medlem. ");
 
     public final String membershipStatus;
 

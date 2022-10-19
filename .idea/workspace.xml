@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="71a6d954-dc4e-4cf1-90b2-4ea47ce3b47e" name="Changes" comment="progress for methods and added file">
+    <list default="true" id="71a6d954-dc4e-4cf1-90b2-4ea47ce3b47e" name="Changes" comment="progress for methods and resolved bug for last payment date and set it to clone of member">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Sprint2/BestGymEver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sprint2/BestGymEver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Sprint2/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sprint2/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sprint2/MembershipStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sprint2/MembershipStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sprint2/PTinfo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sprint2/PTinfo.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +140,7 @@
       <workItem from="1666102556911" duration="3000" />
       <workItem from="1666116528431" duration="2853000" />
       <workItem from="1666162680435" duration="253000" />
-      <workItem from="1666198942467" duration="2005000" />
+      <workItem from="1666198942467" duration="3289000" />
     </task>
     <task id="LOCAL−00001" summary="update, adderat för sprint 2">
       <created>1665667314718</created>
@@ -188,7 +190,13 @@
       <option name="presentableId" value="LOCAL−00008" />
       <updated>1666162784122</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL−00009" summary="progress for methods and resolved bug for last payment date and set it to clone of member">
+      <created>1666201258298</created>
+      <option name="number" value="LOCAL−00009" />
+      <option name="presentableId" value="LOCAL−00009" />
+      <updated>1666201258298</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -214,14 +222,15 @@
     <MESSAGE value="progress for list" />
     <MESSAGE value="progress for methods" />
     <MESSAGE value="progress for methods and added file" />
-    <option name="LAST_COMMIT_MESSAGE" value="progress for methods and added file" />
+    <MESSAGE value="progress for methods and resolved bug for last payment date and set it to clone of member" />
+    <option name="LAST_COMMIT_MESSAGE" value="progress for methods and resolved bug for last payment date and set it to clone of member" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Sprint2/BestGymEver.java</url>
-          <line>83</line>
+          <line>82</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

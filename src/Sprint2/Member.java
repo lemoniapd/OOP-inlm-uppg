@@ -22,7 +22,11 @@ public class Member extends Person {
         this.membershipStatus = membershipStatus;
     }
 
-    public String stringResult() {
-        return getName() + " har medlemsstatus: " + this.membershipStatus;
+    public String getMembershipStatus() {
+        return membershipStatus;
+    }
+
+    public String printMembershipStatus() {
+        return getName() + " har medlemsstatus: " + getMembershipStatus();
     }
 }
