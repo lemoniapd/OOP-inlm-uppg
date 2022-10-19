@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="71a6d954-dc4e-4cf1-90b2-4ea47ce3b47e" name="Changes" comment="progress for methods">
-      <change afterPath="$PROJECT_DIR$/Test/Sprint2/MemberTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sprint2/PTinfo.txt" afterDir="false" />
+    <list default="true" id="71a6d954-dc4e-4cf1-90b2-4ea47ce3b47e" name="Changes" comment="progress for methods and added file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/Sprint2/BestGymEverTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Sprint2/BestGymEverTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Sprint2/BestGymEver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sprint2/BestGymEver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sprint2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sprint2/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sprint2/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sprint2/Member.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,6 +137,8 @@
       <workItem from="1666102348200" duration="206000" />
       <workItem from="1666102556911" duration="3000" />
       <workItem from="1666116528431" duration="2853000" />
+      <workItem from="1666162680435" duration="253000" />
+      <workItem from="1666198942467" duration="2005000" />
     </task>
     <task id="LOCAL−00001" summary="update, adderat för sprint 2">
       <created>1665667314718</created>
@@ -183,7 +182,13 @@
       <option name="presentableId" value="LOCAL−00007" />
       <updated>1666075887071</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL−00008" summary="progress for methods and added file">
+      <created>1666162784122</created>
+      <option name="number" value="LOCAL−00008" />
+      <option name="presentableId" value="LOCAL−00008" />
+      <updated>1666162784122</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,20 +213,26 @@
     <MESSAGE value="minor progresses" />
     <MESSAGE value="progress for list" />
     <MESSAGE value="progress for methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="progress for methods" />
+    <MESSAGE value="progress for methods and added file" />
+    <option name="LAST_COMMIT_MESSAGE" value="progress for methods and added file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Sprint2/BestGymEver.java</url>
-          <line>35</line>
-          <option name="timeStamp" value="9" />
+          <line>83</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Sprint2/BestGymEver.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="10" />
+          <line>33</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Sprint2/BestGymEver.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

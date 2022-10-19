@@ -10,13 +10,14 @@ public class Member extends Person {
         super(name, IDnr);
     }
 
-    public String getDateOfLastPayment() {
-        return String.valueOf(dateOfLastPayment);
+    public LocalDate getDateOfLastPayment() {
+        return this.dateOfLastPayment;
     }
 
     public void setDateOfLastPayment(String dateOfLastPayment) {
         this.dateOfLastPayment = LocalDate.parse(dateOfLastPayment);
     }
+
     public void setMembershipStatus(String membershipStatus) {
         this.membershipStatus = membershipStatus;
     }

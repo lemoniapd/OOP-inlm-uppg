@@ -35,6 +35,7 @@ public class BestGymEver {
                         workoutForMember(member);
                     }
                 } catch (NullPointerException e) {
+                    e.printStackTrace();
                     System.exit(0);
                 }
             }
@@ -50,6 +51,7 @@ public class BestGymEver {
             while ((line = br.readLine()) != null) {
                 memberList.add(new Member(line.substring(0, line.indexOf(',')),
                         line.substring(line.indexOf(',') + 2)));
+
                 memberList.get(memberCounter).setDateOfLastPayment(br.readLine().trim());
                 memberCounter++;
             }
@@ -71,6 +73,7 @@ public class BestGymEver {
             if (element.getName().equalsIgnoreCase(input) || element.getIDnr().equalsIgnoreCase(input)) {
                 member.setName(element.getName());
                 member.setIDnr(element.getIDnr());
+                member.setDateOfLastPayment(String.valueOf(element.getDateOfLastPayment()));
                 return member;
             }
         }
@@ -78,7 +81,7 @@ public class BestGymEver {
     }
 
     public boolean isInactiveMember(Member member) {
-        LocalDate expirationDateMembership = LocalDate.parse(member.getDateOfLastPayment()).plusYears(1);
+        LocalDate expirationDateMembership = member.getDateOfLastPayment().plusYears(1);
         if (expirationDateMembership.isBefore(LocalDate.now())) {
             member.setMembershipStatus(INACTIVE_MEMBER.membershipStatus);
             return true;
