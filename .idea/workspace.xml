@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="71a6d954-dc4e-4cf1-90b2-4ea47ce3b47e" name="Changes" comment="removed 1 usage of variable file path and made file path and out file path final">
-      <change afterPath="$PROJECT_DIR$/Test/Sprint2/MemberHandlerTest.java" afterDir="false" />
+    <list default="true" id="71a6d954-dc4e-4cf1-90b2-4ea47ce3b47e" name="Changes" comment="tests for Best gym ever updated to suit new project structure">
+      <change afterPath="$PROJECT_DIR$/Test/Sprint2/PTinfoTest" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/Sprint2/BestGymEverTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Sprint2/BestGymEverTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/Sprint2/customersTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Sprint2/MemberHandlerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Sprint2/MemberHandlerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Sprint2/BestGymEver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sprint2/BestGymEver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sprint2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sprint2/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sprint2/MemberHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sprint2/MemberHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,21 +72,8 @@
       <recent name="Sprint2" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BestGymEverTest.getListFromFileTest">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Sprint2.Main" />
-      <module name="OOP-inlm-uppg" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Sprint2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BestGymEverTest.getListFromFileTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.BestGymEverTest">
+    <configuration name="BestGymEverTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OOP-inlm-uppg" />
       <extension name="coverage">
         <pattern>
@@ -97,8 +83,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="Sprint2" />
       <option name="MAIN_CLASS_NAME" value="Sprint2.BestGymEverTest" />
-      <option name="METHOD_NAME" value="getListFromFileTest" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -118,7 +103,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MemberHandlerTest.memberDoesNotExistTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MemberHandlerTest.activeMemberTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OOP-inlm-uppg" />
       <extension name="coverage">
         <pattern>
@@ -128,13 +113,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="Sprint2" />
       <option name="MAIN_CLASS_NAME" value="Sprint2.MemberHandlerTest" />
-      <option name="METHOD_NAME" value="memberDoesNotExistTest" />
+      <option name="METHOD_NAME" value="activeMemberTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MemberHandlerTest.memberExistsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MemberHandlerTest.inactiveMemberTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OOP-inlm-uppg" />
       <extension name="coverage">
         <pattern>
@@ -144,7 +129,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="Sprint2" />
       <option name="MAIN_CLASS_NAME" value="Sprint2.MemberHandlerTest" />
-      <option name="METHOD_NAME" value="memberExistsTest" />
+      <option name="METHOD_NAME" value="inactiveMemberTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MemberHandlerTest.workoutForMemberTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="OOP-inlm-uppg" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Sprint2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Sprint2" />
+      <option name="MAIN_CLASS_NAME" value="Sprint2.MemberHandlerTest" />
+      <option name="METHOD_NAME" value="workoutForMemberTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -152,11 +153,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BestGymEverTest.getListFromFileTest" />
-        <item itemvalue="JUnit.MemberHandlerTest.memberDoesNotExistTest" />
-        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.BestGymEverTest" />
         <item itemvalue="JUnit.MemberHandlerTest" />
-        <item itemvalue="JUnit.MemberHandlerTest.memberExistsTest" />
+        <item itemvalue="JUnit.MemberHandlerTest.activeMemberTest" />
+        <item itemvalue="JUnit.MemberHandlerTest.inactiveMemberTest" />
+        <item itemvalue="JUnit.MemberHandlerTest.workoutForMemberTest" />
       </list>
     </recent_temporary>
   </component>
@@ -178,7 +179,7 @@
       <workItem from="1666102556911" duration="3000" />
       <workItem from="1666116528431" duration="2853000" />
       <workItem from="1666162680435" duration="253000" />
-      <workItem from="1666198942467" duration="6095000" />
+      <workItem from="1666198942467" duration="9366000" />
     </task>
     <task id="LOCAL−00001" summary="update, adderat för sprint 2">
       <created>1665667314718</created>
@@ -252,7 +253,13 @@
       <option name="presentableId" value="LOCAL−00012" />
       <updated>1666203411277</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL−00013" summary="tests for Best gym ever updated to suit new project structure">
+      <created>1666205132845</created>
+      <option name="number" value="LOCAL−00013" />
+      <option name="presentableId" value="LOCAL−00013" />
+      <updated>1666205132845</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -282,20 +289,26 @@
     <MESSAGE value="progress for methods and fixed null pointer exception while closing dialog and dynamic printing of status" />
     <MESSAGE value="added class member handler for methods regarding members rather than keeping them in Best gym ever" />
     <MESSAGE value="removed 1 usage of variable file path and made file path and out file path final" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed 1 usage of variable file path and made file path and out file path final" />
+    <MESSAGE value="tests for Best gym ever updated to suit new project structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="tests for Best gym ever updated to suit new project structure" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Sprint2/BestGymEver.java</url>
-          <line>31</line>
+          <line>33</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Sprint2/BestGymEver.java</url>
-          <line>25</line>
+          <line>27</line>
           <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Test/Sprint2/MemberHandlerTest.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

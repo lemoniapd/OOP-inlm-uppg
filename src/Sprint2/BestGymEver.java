@@ -9,6 +9,8 @@ import java.util.*;
 public class BestGymEver {
 
     public final String FILE_PATH = "src/Sprint2/customers.txt";
+    public final String OUT_FILE_PATH = "src/Sprint2/PTinfo.txt";
+
 
     public boolean test = false;
 
@@ -30,7 +32,7 @@ public class BestGymEver {
                         JOptionPane.showMessageDialog(null, member.printMembershipStatus());
                     } else {
                         JOptionPane.showMessageDialog(null, member.printMembershipStatus());
-                        memberHandler.workoutForMember(member);
+                        memberHandler.workoutForMember(member, Path.of(OUT_FILE_PATH), test);
                     }
                 } catch (NullPointerException e) {
                     System.exit(0);
