@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="71a6d954-dc4e-4cf1-90b2-4ea47ce3b47e" name="Changes" comment="progress for methods and resolved bug for last payment date and set it to clone of member">
+    <list default="true" id="71a6d954-dc4e-4cf1-90b2-4ea47ce3b47e" name="Changes" comment="progress for methods and fixed null pointer exception while closing dialog and dynamic printing of status">
+      <change afterPath="$PROJECT_DIR$/src/Sprint2/MemberHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Sprint2/BestGymEver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sprint2/BestGymEver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sprint2/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sprint2/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sprint2/MembershipStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sprint2/MembershipStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sprint2/PTinfo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sprint2/PTinfo.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,9 +14,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -140,7 +138,7 @@
       <workItem from="1666102556911" duration="3000" />
       <workItem from="1666116528431" duration="2853000" />
       <workItem from="1666162680435" duration="253000" />
-      <workItem from="1666198942467" duration="3289000" />
+      <workItem from="1666198942467" duration="4028000" />
     </task>
     <task id="LOCAL−00001" summary="update, adderat för sprint 2">
       <created>1665667314718</created>
@@ -196,7 +194,13 @@
       <option name="presentableId" value="LOCAL−00009" />
       <updated>1666201258298</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL−00010" summary="progress for methods and fixed null pointer exception while closing dialog and dynamic printing of status">
+      <created>1666202381567</created>
+      <option name="number" value="LOCAL−00010" />
+      <option name="presentableId" value="LOCAL−00010" />
+      <updated>1666202381568</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,16 +227,12 @@
     <MESSAGE value="progress for methods" />
     <MESSAGE value="progress for methods and added file" />
     <MESSAGE value="progress for methods and resolved bug for last payment date and set it to clone of member" />
-    <option name="LAST_COMMIT_MESSAGE" value="progress for methods and resolved bug for last payment date and set it to clone of member" />
+    <MESSAGE value="progress for methods and fixed null pointer exception while closing dialog and dynamic printing of status" />
+    <option name="LAST_COMMIT_MESSAGE" value="progress for methods and fixed null pointer exception while closing dialog and dynamic printing of status" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Sprint2/BestGymEver.java</url>
-          <line>82</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Sprint2/BestGymEver.java</url>
           <line>33</line>

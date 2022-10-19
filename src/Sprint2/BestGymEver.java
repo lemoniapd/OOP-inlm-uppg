@@ -10,13 +10,13 @@ import static Sprint2.MembershipStatus.*;
 
 public class BestGymEver {
 
-    String filePath = "src/Sprint2/customers.txt";
-    String outFilePathName = "src/Sprint2/PTinfo.txt";
+    private String filePath = "src/Sprint2/customers.txt";
 
     public boolean test = false;
 
     String testData = " ";
     private List<Member> memberList = new ArrayList<>();
+    private MemberHandler memberHandler = new MemberHandler();
 
     public BestGymEver(boolean test, String testData) {
         getListFromFile(Path.of(filePath));
@@ -25,14 +25,14 @@ public class BestGymEver {
             while (true) {
                 input = JOptionPane.showInputDialog(null, "Skriv in namn eller personnummer: ");
                 try {
-                    Member member = isMember(input.trim());
+                    Member member = memberHandler.isMember(input.trim(), memberList);
                     if (member.getName().equals("")) {
                         JOptionPane.showMessageDialog(null, "Ingen medlem med det namnet/personnumret hittad.");
-                    } else if (isInactiveMember(member)) {
+                    } else if (memberHandler.isInactiveMember(member)) {
                         JOptionPane.showMessageDialog(null, member.printMembershipStatus());
                     } else {
                         JOptionPane.showMessageDialog(null, member.printMembershipStatus());
-                        workoutForMember(member);
+                        memberHandler.workoutForMember(member);
                     }
                 } catch (NullPointerException e) {
                     System.exit(0);
@@ -64,43 +64,5 @@ public class BestGymEver {
             System.exit(0);
         }
         return memberList;
-    }
-
-    public Member isMember(String input) {
-        Member member = new Member("", "");
-        for (Member element : memberList) {
-            if (element.getName().equalsIgnoreCase(input) || element.getIDnr().equalsIgnoreCase(input)) {
-                member.setName(element.getName());
-                member.setIDnr(element.getIDnr());
-                member.setDateOfLastPayment(String.valueOf(element.getDateOfLastPayment()));
-                return member;
-            }
-        }
-        return member;
-    }
-
-    public boolean isInactiveMember(Member member) {
-        LocalDate expirationDateMembership = member.getDateOfLastPayment().plusYears(1);
-        if (expirationDateMembership.isBefore(LocalDate.now())) {
-            member.setMembershipStatus(INACTIVE_MEMBER.membershipStatus);
-            return true;
-        } else {
-            member.setMembershipStatus(ACTIVE_MEMBER.membershipStatus);
-            return false;
-        }
-    }
-
-    public void workoutForMember(Member member) {
-        int workout = JOptionPane.showConfirmDialog(null, "Ska medlemmen även träna?");
-        if (workout == 0) {
-            try (PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter(outFilePathName, true)))) {
-                out.println("Medlem " + member.getName() + " " + member.getIDnr() + " tränade " + LocalDate.now());
-                JOptionPane.showMessageDialog(null, "Träningspass registrerat!");
-            } catch (Exception e) {
-                JOptionPane.showMessageDialog(null, "Någonting gick fel när träningspass skulle sparas!");
-                e.printStackTrace();
-                System.exit(0);
-            }
-        }
     }
 }
