@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="71a6d954-dc4e-4cf1-90b2-4ea47ce3b47e" name="Changes" comment="progress for list">
-      <change afterPath="$PROJECT_DIR$/src/Sprint2/MembershipStatus.java" afterDir="false" />
+    <list default="true" id="71a6d954-dc4e-4cf1-90b2-4ea47ce3b47e" name="Changes" comment="progress for methods">
+      <change afterPath="$PROJECT_DIR$/Test/Sprint2/MemberTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Sprint2/PTinfo.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Sprint2/BestGymEverTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Sprint2/BestGymEverTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Sprint2/BestGymEver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sprint2/BestGymEver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Sprint2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sprint2/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sprint2/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sprint2/Member.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +19,7 @@
       <list>
         <option value="Class" />
         <option value="Enum" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -35,21 +37,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "/Users/lemoniapalmqvist/IdeaProjects/OOP-inlm-uppg/Test/Sprint1"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/lemoniapalmqvist/IdeaProjects/OOP-inlm-uppg/Test/Sprint1&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="Sprint2" />
@@ -130,7 +132,14 @@
       <option name="presentableId" value="Default" />
       <updated>1665666757410</updated>
       <workItem from="1665666759221" duration="684000" />
-      <workItem from="1665906324328" duration="32239000" />
+      <workItem from="1665906324328" duration="32481000" />
+      <workItem from="1666076520682" duration="3783000" />
+      <workItem from="1666092246527" duration="410000" />
+      <workItem from="1666092752197" duration="1776000" />
+      <workItem from="1666096763905" duration="2000" />
+      <workItem from="1666102348200" duration="206000" />
+      <workItem from="1666102556911" duration="3000" />
+      <workItem from="1666116528431" duration="2853000" />
     </task>
     <task id="LOCAL−00001" summary="update, adderat för sprint 2">
       <created>1665667314718</created>
@@ -168,7 +177,13 @@
       <option name="presentableId" value="LOCAL−00006" />
       <updated>1666027046384</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL−00007" summary="progress for methods">
+      <created>1666075887071</created>
+      <option name="number" value="LOCAL−00007" />
+      <option name="presentableId" value="LOCAL−00007" />
+      <updated>1666075887071</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,20 +207,21 @@
     <MESSAGE value="minor progress" />
     <MESSAGE value="minor progresses" />
     <MESSAGE value="progress for list" />
-    <option name="LAST_COMMIT_MESSAGE" value="progress for list" />
+    <MESSAGE value="progress for methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="progress for methods" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Sprint2/BestGymEver.java</url>
-          <line>25</line>
+          <line>35</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Sprint2/BestGymEver.java</url>
-          <line>71</line>
-          <option name="timeStamp" value="12" />
+          <line>28</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

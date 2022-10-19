@@ -4,7 +4,6 @@ import javax.swing.*;
 import java.io.*;
 import java.nio.file.Path;
 import java.time.LocalDate;
-import java.time.Period;
 import java.util.*;
 
 import static Sprint2.MembershipStatus.*;
@@ -15,22 +14,32 @@ public class BestGymEver {
     String outFilePathName = "src/Sprint2/PTinfo.txt";
 
     public boolean test = false;
+
+    String testData = " ";
     private List<Member> memberList = new ArrayList<>();
 
-    public BestGymEver(boolean b) {
+    public BestGymEver(boolean test, String testData) {
         getListFromFile(Path.of(filePath));
-        while (true) {
-            String input = JOptionPane.showInputDialog(null, "Skriv in namn: ");
-            try {
-                Member member = isMember(input);
-                if (isActiveMember(member)) {
-                    JOptionPane.showMessageDialog(null, "Aktiv");
-                } else if (member != null) {
-                    JOptionPane.showMessageDialog(null, "Inaktiv");
+        String input;
+        if (!test) {
+            while (true) {
+                input = JOptionPane.showInputDialog(null, "Skriv in namn eller personnummer: ");
+                try {
+                    Member member = isMember(input.trim());
+                    if (member.getName().equals("")) {
+                        JOptionPane.showMessageDialog(null, "Ingen medlem med det namnet/personnumret hittad.");
+                    } else if (isInactiveMember(member)) {
+                        JOptionPane.showMessageDialog(null, "Inaktiv");
+                    } else {
+                        JOptionPane.showMessageDialog(null, "Aktiv");
+                        workoutForMember(member);
+                    }
+                } catch (NullPointerException e) {
+                    System.exit(0);
                 }
-            } catch (NullPointerException e) {
-                JOptionPane.showMessageDialog(null, input + " är inte medlem!");
             }
+        } else {
+            input = testData;
         }
     }
 
@@ -57,34 +66,36 @@ public class BestGymEver {
     }
 
     public Member isMember(String input) {
+        Member member = new Member("", "");
         for (Member element : memberList) {
-            if (element.getName().equalsIgnoreCase(input)) {
-                return element;
+            if (element.getName().equalsIgnoreCase(input) || element.getIDnr().equalsIgnoreCase(input)) {
+                member.setName(element.getName());
+                member.setIDnr(element.getIDnr());
+                return member;
             }
         }
-        return null; //TILLFÄLLIG LÖSNING
+        return member;
     }
 
-    public boolean isActiveMember(Member member) {
-        LocalDate lastPaymentDate = LocalDate.parse(member.getDateOfLastPayment());
-        Period sinceLastPayment = Period.between(LocalDate.now(), lastPaymentDate);
-        int passedYears = Math.abs(sinceLastPayment.getYears());
-        if (passedYears <= 1) {
-            member.setMembershipStatus(ACTIVE_MEMBER.membershipStatus);
+    public boolean isInactiveMember(Member member) {
+        LocalDate expirationDateMembership = LocalDate.parse(member.getDateOfLastPayment()).plusYears(1);
+        if (expirationDateMembership.isBefore(LocalDate.now())) {
+            member.setMembershipStatus(INACTIVE_MEMBER.membershipStatus);
             return true;
         } else {
-            member.setMembershipStatus(INACTIVE_MEMBER.membershipStatus);
+            member.setMembershipStatus(ACTIVE_MEMBER.membershipStatus);
             return false;
         }
     }
 
     public void workoutForMember(Member member) {
         int workout = JOptionPane.showConfirmDialog(null, "Ska medlemmen även träna?");
-        if (workout == 1) {
-            try (PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter(outFilePathName)))) {
+        if (workout == 0) {
+            try (PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter(outFilePathName, true)))) {
                 out.println("Medlem " + member.getName() + " " + member.getIDnr() + " tränade " + LocalDate.now());
+                JOptionPane.showMessageDialog(null, "Träningspass registrerat!");
             } catch (Exception e) {
-                JOptionPane.showMessageDialog(null, "Någonting gick fel!");
+                JOptionPane.showMessageDialog(null, "Någonting gick fel när träningspass skulle sparas!");
                 e.printStackTrace();
                 System.exit(0);
             }

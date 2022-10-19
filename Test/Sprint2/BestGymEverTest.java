@@ -11,8 +11,8 @@ import java.util.List;
 public class BestGymEverTest {
 
     List <Member> memberListTest = new ArrayList<>();
-
-    BestGymEver bge = new BestGymEver(true);
+    String testData = "NÅGONTING HÄR";
+    BestGymEver bge = new BestGymEver(true, testData);
 
     @Test
     void getListFromFileTest (){
@@ -30,7 +30,7 @@ public class BestGymEverTest {
 
     @Test
     void isMemberTest () {
-        boolean testIfMember = bge.isMember("Alix");
+        boolean testIfMember = bge.isMember("Alix Badalix");
         assertTrue(testIfMember);
     }
 
