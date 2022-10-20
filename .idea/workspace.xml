@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="71a6d954-dc4e-4cf1-90b2-4ea47ce3b47e" name="Changes" comment="tests for Best gym ever and member handler updated to suit new project structure">
+    <list default="true" id="71a6d954-dc4e-4cf1-90b2-4ea47ce3b47e" name="Changes" comment="Push for final version of Best Gym EVER!!!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Sprint2/BestGymEverTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Sprint2/BestGymEverTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Sprint2/MemberHandlerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Sprint2/MemberHandlerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/Sprint2/PTinfoTest" beforeDir="false" afterPath="$PROJECT_DIR$/Test/Sprint2/PTinfoTest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sprint2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sprint2/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +72,7 @@
       <recent name="Sprint2" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.BestGymEverTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Sprint2.Main" />
       <module name="OOP-inlm-uppg" />
@@ -146,9 +150,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.BestGymEverTest" />
         <item itemvalue="JUnit.MemberHandlerTest" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.MemberHandlerTest.activeMemberTest" />
         <item itemvalue="JUnit.MemberHandlerTest.inactiveMemberTest" />
       </list>
@@ -172,7 +176,8 @@
       <workItem from="1666102556911" duration="3000" />
       <workItem from="1666116528431" duration="2853000" />
       <workItem from="1666162680435" duration="253000" />
-      <workItem from="1666198942467" duration="9612000" />
+      <workItem from="1666198942467" duration="10199000" />
+      <workItem from="1666243204275" duration="1733000" />
     </task>
     <task id="LOCAL−00001" summary="update, adderat för sprint 2">
       <created>1665667314718</created>
@@ -258,7 +263,13 @@
       <option name="presentableId" value="LOCAL−00014" />
       <updated>1666208455071</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL−00015" summary="Push for final version of Best Gym EVER!!!">
+      <created>1666208642625</created>
+      <option name="number" value="LOCAL−00015" />
+      <option name="presentableId" value="LOCAL−00015" />
+      <updated>1666208642625</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -290,23 +301,10 @@
     <MESSAGE value="removed 1 usage of variable file path and made file path and out file path final" />
     <MESSAGE value="tests for Best gym ever updated to suit new project structure" />
     <MESSAGE value="tests for Best gym ever and member handler updated to suit new project structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="tests for Best gym ever and member handler updated to suit new project structure" />
+    <MESSAGE value="Push for final version of Best Gym EVER!!!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Push for final version of Best Gym EVER!!!" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Sprint2/BestGymEver.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Sprint2/BestGymEver.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="line" />
